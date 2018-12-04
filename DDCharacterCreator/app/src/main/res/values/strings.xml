@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">D&amp;D Character Creator</string>
+
+    <string name="txtHeader">Login</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtUsername">Username</string>
+    <string name="btnLogin">Login</string>
+    <string name="errMessageLogin">Invalid Login.  Please retry.</string>
+    <string name="errMessagePassword">Invalid Password.  Please retry.</string>
+
+    <string name="txtWelcome">Welcome Adventurer!</string>
+    <string name="btnNewChar">Create Character</string>
+    <string name="btnLoadChar">Load Character</string>
+</resources>
