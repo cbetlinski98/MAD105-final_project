@@ -11,4 +11,75 @@
     <string name="txtWelcome">Welcome Adventurer!</string>
     <string name="btnNewChar">Create Character</string>
     <string name="btnLoadChar">Load Character</string>
+
+    <string name="txtNewChar">New Character</string>
+    <string name="txtCharName">Name:</string>
+    <string name="txtCharClass">Class:</string>
+    <string name="txtCharRace">Race:</string>
+    <string name="txtCharStr">Str:</string>
+    <string name="txtCharDex">Dex:</string>
+    <string name="txtCharCon">Con:</string>
+    <string name="txtCharInt">Int:</string>
+    <string name="txtCharWis">Wis:</string>
+    <string name="txtCharCha">Cha:</string>
+    <string name="btnSave">Save</string>
+    <string name="btnExplain">"?"</string>
+    <string-array name="Classes">
+        <item>Barbarian</item>
+        <item>Bard</item>
+        <item>Cleric</item>
+        <item>Druid</item>
+        <item>Fighter</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Ranger</item>
+        <item>Rogue</item>
+        <item>Sorcerer</item>
+        <item>Warlock</item>
+        <item>Wizard</item>
+    </string-array>
+
+    <string-array name="Races">
+        <item>Dragonborn</item>
+        <item>Dwarf</item>
+        <item>Elf</item>
+        <item>Gnome</item>
+        <item>Half-Elf</item>
+        <item>Half-Orc</item>
+        <item>Halfling</item>
+        <item>Human</item>
+        <item>Tiefling</item>
+    </string-array>
+
+    <string-array name="Stats">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string name="txtStatsExplained">Stats Explained</string>
+    <string name="txtStrengthExplained">Strength- Measures physical power</string>
+    <string name="txtDexterityExplained">Dexterity- Measures agility</string>
+    <string name="txtConstitutionExplained">Constitution- Measures endurance</string>
+    <string name="txtIntelligenceExplained">Intelligence- Measures reasoning and memory</string>
+    <string name="txtWisdomExplained">Wisdom- Measures perception and insight</string>
+    <string name="txtCharismaExplained">Charisma- Measures how well you talk to others</string>
+
 </resources>

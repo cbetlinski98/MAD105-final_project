@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgTorch1"
         android:layout_width="44dp"
         android:layout_height="128dp"
         android:layout_marginStart="24dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgTorch2"
         android:layout_width="44dp"
         android:layout_height="128dp"
         android:layout_marginTop="16dp"
@@ -46,29 +46,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgDagger"
         android:layout_width="45dp"
         android:layout_height="127dp"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
         android:src="@drawable/dagger"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgTorch1" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgScroll"
         android:layout_width="54dp"
         android:layout_height="117dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
         android:src="@drawable/scroll"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imgTorch2" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtWelcome"
         android:layout_width="234dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -86,25 +86,31 @@
         app:layout_constraintTop_toTopOf="@+id/homeBG" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnNewChar"
         android:layout_width="116dp"
         android:layout_height="61dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
         android:text="@string/btnNewChar"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imgDagger" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnLoadChar"
         android:layout_width="121dp"
         android:layout_height="64dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:background="@android:color/transparent"
         android:text="@string/btnLoadChar"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imgScroll" />
 
 </android.support.constraint.ConstraintLayout>

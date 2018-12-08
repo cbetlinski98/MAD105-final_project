@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCharScreen">
+
+    <ImageView
+        android:id="@+id/newCharBG"
+        android:layout_width="374dp"
+        android:layout_height="492dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/dragon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/txtNewChar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/txtNewChar"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCharName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/txtCharName"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCharClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtCharClass"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCharName" />
+
+    <TextView
+        android:id="@+id/txtCharRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtCharRace"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCharClass" />
+
+    <TextView
+        android:id="@+id/txtCharStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtCharStr"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCharRace" />
+
+    <TextView
+        android:id="@+id/txtCharDex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtCharDex"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCharStr" />
+
+    <TextView
+        android:id="@+id/txtCharCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtCharCon"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCharDex" />
+
+    <TextView
+        android:id="@+id/txtCharInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtCharInt"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/spnStr"
+        app:layout_constraintTop_toBottomOf="@+id/spnRace" />
+
+    <TextView
+        android:id="@+id/txtCharWis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtCharWis"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/spnDex"
+        app:layout_constraintTop_toBottomOf="@+id/txtCharInt" />
+
+    <TextView
+        android:id="@+id/txtCharCha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtCharCha"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/spnCon"
+        app:layout_constraintTop_toBottomOf="@+id/txtCharWis" />
+
+    <EditText
+        android:id="@+id/txtNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Character Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtCharName"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewChar" />
+
+    <Spinner
+        android:id="@+id/spnClass"
+        android:layout_width="191dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/Classes"
+        app:layout_constraintStart_toEndOf="@+id/txtCharClass"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameInput" />
+
+    <Spinner
+        android:id="@+id/spnRace"
+        android:layout_width="191dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/Races"
+        app:layout_constraintStart_toEndOf="@+id/txtCharRace"
+        app:layout_constraintTop_toBottomOf="@+id/spnClass" />
+
+    <Spinner
+        android:id="@+id/spnStr"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/Stats"
+        app:layout_constraintStart_toEndOf="@+id/txtCharStr"
+        app:layout_constraintTop_toBottomOf="@+id/spnRace" />
+
+    <Spinner
+        android:id="@+id/spnDex"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/Stats"
+        app:layout_constraintStart_toEndOf="@+id/txtCharDex"
+        app:layout_constraintTop_toBottomOf="@+id/spnStr" />
+
+    <Spinner
+        android:id="@+id/spnCon"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/Stats"
+        app:layout_constraintStart_toEndOf="@+id/txtCharCon"
+        app:layout_constraintTop_toBottomOf="@+id/spnDex" />
+
+    <Spinner
+        android:id="@+id/spnInt"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/Stats"
+        app:layout_constraintStart_toEndOf="@+id/txtCharInt"
+        app:layout_constraintTop_toBottomOf="@+id/spnRace" />
+
+    <Spinner
+        android:id="@+id/spnWis"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/Stats"
+        app:layout_constraintStart_toEndOf="@+id/txtCharWis"
+        app:layout_constraintTop_toBottomOf="@+id/spnInt" />
+
+    <Spinner
+        android:id="@+id/spnCha"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/Stats"
+        app:layout_constraintStart_toEndOf="@+id/txtCharCha"
+        app:layout_constraintTop_toBottomOf="@+id/spnWis" />
+
+    <Button
+        android:id="@+id/btnExplanation"
+        android:layout_width="51dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/btnExplain"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNewChar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSaveChar"
+        android:layout_width="76dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/btnSave"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtNewChar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

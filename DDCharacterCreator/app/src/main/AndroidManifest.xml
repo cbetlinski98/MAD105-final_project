@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeScreen"></activity>
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".NewCharScreen" />
+        <activity android:name=".LoadCharScreen" />
+        <activity android:name=".ExplanationScreen"></activity>
     </application>
 
 </manifest>
