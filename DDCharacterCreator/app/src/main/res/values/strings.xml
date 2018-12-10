@@ -82,4 +82,7 @@
     <string name="txtWisdomExplained">Wisdom- Measures perception and insight</string>
     <string name="txtCharismaExplained">Charisma- Measures how well you talk to others</string>
 
+    <string name="txtCharacter">Character</string>
+    <string name="txtHome">Home</string>
+
 </resources>

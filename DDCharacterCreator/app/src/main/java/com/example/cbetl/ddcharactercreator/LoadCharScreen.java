@@ -1,7 +1,10 @@
 package com.example.cbetl.ddcharactercreator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class LoadCharScreen extends AppCompatActivity {
@@ -34,7 +37,25 @@ public class LoadCharScreen extends AppCompatActivity {
             charCha = extras.getString("Charisma");
         }
 
-        final TextView txtCharacter = (TextView) findViewById(R.id.txtCharacter);
+        final TextView Name = (TextView) findViewById(R.id.Name);
+        final TextView Class = (TextView) findViewById(R.id.Class);
+        final TextView Race = (TextView) findViewById(R.id.Race);
+        final TextView Str = (TextView) findViewById(R.id.Str);
+        final TextView Dex = (TextView) findViewById(R.id.Dex);
+        final TextView Con = (TextView) findViewById(R.id.Con);
+        final TextView Int = (TextView) findViewById(R.id.Int);
+        final TextView Wis = (TextView) findViewById(R.id.Wis);
+        final TextView Cha = (TextView) findViewById(R.id.Cha);
+
+        Name.setText(charName);
+        Class.setText(charClass);
+        Race.setText(charRace);
+        Str.setText(charStr);
+        Dex.setText(charDex);
+        Con.setText(charCon);
+        Int.setText(charInt);
+        Wis.setText(charWis);
+        Cha.setText(charCha);
 
     }
 }
