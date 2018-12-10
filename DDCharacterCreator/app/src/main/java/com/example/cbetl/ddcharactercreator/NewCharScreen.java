@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class NewCharScreen extends AppCompatActivity {
 
@@ -19,6 +20,8 @@ public class NewCharScreen extends AppCompatActivity {
     private String charWis = "";
     private String charCha = "";
 
+    private Toast toastError = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,23 +29,37 @@ public class NewCharScreen extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras!=null){
-            charName = extras.getString("CharacterName");
-            charClass = extras.getString("CharacterClass");
-            charRace = extras.getString("CharacterRace");
-            charStr = extras.getString("CharacterStrength");
-            charDex = extras.getString("CharacterDexterity");
-            charCon = extras.getString("CharacterConstitution");
-            charInt = extras.getString("CharacterIntelligence");
-            charWis = extras.getString("CharacterWisdom");
-            charCha = extras.getString("CharacterCharisma");
+            charName = extras.getString("Name");
+            charClass = extras.getString("Class");
+            charRace = extras.getString("Race");
+            charStr = extras.getString("Strength");
+            charDex = extras.getString("Dexterity");
+            charCon = extras.getString("Constitution");
+            charInt = extras.getString("Intelligence");
+            charWis = extras.getString("Wisdom");
+            charCha = extras.getString("Charisma");
         }
 
         Button btnSave = (Button)findViewById(R.id.btnSaveChar);
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (checkData())
-                    startActivity(new Intent(NewCharScreen.this, HomeScreen.class));
+                if (checkData()){
+                    Intent nextScreen = new Intent(NewCharScreen.this, LoadCharScreen.class);
+                    nextScreen.putExtra("Name", charName);
+                    nextScreen.putExtra("Class", charClass);
+                    nextScreen.putExtra("Race", charRace);
+                    nextScreen.putExtra("Strength", charStr);
+                    nextScreen.putExtra("Dexterity", charDex);
+                    nextScreen.putExtra("Constitution", charCon);
+                    nextScreen.putExtra("Intelligence", charInt);
+                    nextScreen.putExtra("Wisdom", charWis);
+                    nextScreen.putExtra("Charisma", charCha);
+
+                    startActivity(nextScreen);
+                } else {
+                    toastError.makeText(getApplicationContext(), "Enter character name", toastError.LENGTH_SHORT).show();
+                }
             }
         });
 
