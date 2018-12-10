@@ -49,9 +49,9 @@
         android:id="@+id/imgDagger"
         android:layout_width="45dp"
         android:layout_height="127dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="232dp"
         android:src="@drawable/dagger"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgTorch1" />
@@ -60,9 +60,9 @@
         android:id="@+id/imgScroll"
         android:layout_width="54dp"
         android:layout_height="117dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:src="@drawable/scroll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgTorch2" />
@@ -89,28 +89,17 @@
         android:id="@+id/btnNewChar"
         android:layout_width="116dp"
         android:layout_height="61dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
         android:background="@android:color/transparent"
         android:text="@string/btnNewChar"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgDagger" />
-
-    <Button
-        android:id="@+id/btnLoadChar"
-        android:layout_width="121dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:background="@android:color/transparent"
-        android:text="@string/btnLoadChar"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/homeBG"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgScroll" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

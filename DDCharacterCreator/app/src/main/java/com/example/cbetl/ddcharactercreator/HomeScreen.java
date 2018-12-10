@@ -20,13 +20,5 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(new Intent(HomeScreen.this, NewCharScreen.class));
             }
         });
-
-        Button btnLC = (Button)findViewById(R.id.btnLoadChar);
-        btnLC.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeScreen.this, LoadCharScreen.class));
-            }
-        });
     }
 }
